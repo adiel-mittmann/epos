@@ -29,7 +29,8 @@ module Epos
       slim      = Tilt["slim"]
 
       @templates = [:extra_tab, :symbols_tab, :idioms_tab, :senses_tab, :defins, :defin_body, :attrs, :headword, :entry]
-      @templates = @templates.map{|sym| [sym, slim.new(File.join(@html_base, sym.to_s.gsub(/_/, "-") + ".slim"))]}.to_h
+      @templates = @templates.map{|sym| [sym, slim.new(File.join(@html_base, sym.to_s.gsub(/_/, "-") + ".slim"))]}
+      @templates = Hash[@templates]
     end
 
     def render(item, data)
