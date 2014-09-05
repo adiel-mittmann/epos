@@ -1,0 +1,8 @@
+- if data[:text]
+  p.defin
+    - if data[:see]
+      = "→ "
+    == render_text(data[:text])
+  == render(:attrs, data)
+  - data[:examples].each do |example|
+    p.example == render_text(example)

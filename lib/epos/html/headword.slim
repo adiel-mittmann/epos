@@ -1,0 +1,14 @@
+h1
+  = '■ '
+  - if data[:n]
+    sup = data[:n]
+  - if data[:language]
+    i == render_text(data[:headword])
+  - else
+    == render_text(data[:headword])
+  - vars = data[:variants].map{|var| render_text(var)}
+  - if vars.size > 0
+    == vars[0..-2].map{|alt| ", #{alt}"}.join
+    == " #{OR} "
+    == vars.last
+== render(:attrs, data)

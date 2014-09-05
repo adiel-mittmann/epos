@@ -1,0 +1,7 @@
+div.epos
+  == render(:headword, data)
+  == render(:senses_tab,  data[:divs].reject{|div| div[:idiom] || div[:symbols]})
+  == render(:symbols_tab, data[:divs].select{|div| div[:symbols]})
+  == render(:idioms_tab,  data[:divs].select{|div| div[:idiom]})
+  - data[:tabs].each do |tab|
+    == render(:extra_tab, tab)

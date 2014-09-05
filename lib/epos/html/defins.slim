@@ -1,0 +1,8 @@
+- if data.length == 1 && !data.first[:num]
+  == render(:defin_body, data.first)
+- else
+  table
+    - data.each do |defin|
+      tr
+        td.num valign='top' = defin[:num]
+        td == render(:defin_body, defin)

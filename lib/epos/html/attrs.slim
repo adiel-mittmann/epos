@@ -1,0 +1,14 @@
+- [ATTRS1, ATTRS2, ATTRS3, ATTRS4, ATTRS5].each do |attrs|
+  - existing = attrs.select{|name| data[name]}
+  - if existing.length > 0
+    p.attrs
+      - existing.each_with_index do |(name, label), index|
+        - if index > 0
+          = '; ' 
+        - if label
+          span.label = label
+        - if data[name].is_a?(String) || data[name].is_a?(Array)
+          - if label
+            = ' '
+          span class=('value ' + name.to_s.gsub(/_/, '-'))
+            == render_text(data[name].is_a?(String) ? data[name] : data[name][@string_index])

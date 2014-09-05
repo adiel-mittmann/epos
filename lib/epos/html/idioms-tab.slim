@@ -1,0 +1,8 @@
+- if data.length > 0
+  h2 = TABS[:idioms]
+  - data.each do |div|
+    h3.idiom
+      = '‣ '
+      == render_text(div[:idiom]).gsub(/@/, "<span class='no-bold'>#{OR}</span>")
+    == render(:attrs, div)
+    == render(:defins, div[:defins])

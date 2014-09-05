@@ -1,0 +1,4 @@
+- if data.length > 0
+  h2 = TABS[:symbols]
+  - data.each do |div|
+    == render(:defins, div[:defins])

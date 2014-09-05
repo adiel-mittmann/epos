@@ -1,0 +1,54 @@
+.epos{
+  font-family: "Noto Sans", "DejaVu Sans", sans-serif;
+  color: #333333;
+}
+
+.epos h1, .epos h2, .epos h3{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.epos h3{
+    margin: 0;
+}
+.epos h1{
+    font-size: 120%;
+}
+.epos h2{
+    font-size: 110%;
+}
+.epos h3{
+    font-size: 100%;
+}
+
+.epos td{
+  padding: 0;
+}
+.epos td.num{
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.epos p{
+  margin: 0;
+}
+.epos p.example{
+  color: #006600;
+  font-style: italic;
+}
+.epos .no-bold{
+  font-weight: normal;
+}
+
+.epos span.label{
+  font-style: italic;
+  color: #2e3e8c;
+}
+.epos span.value{
+  color: #666666;
+}
+.epos span.value.transty{
+  color: #aaaa55;
+}
+.epos span.value.note{
+  color: #aa5555;
+}

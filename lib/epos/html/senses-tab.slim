@@ -1,0 +1,8 @@
+- if data.length > 0
+  - if !@unmarked
+    h2 = TABS[:senses]
+  - data.each do |div|
+    - if div[:pos]
+      h3 = div[:pos][@string_index]
+    == render(:attrs, div)
+    == render(:defins, div[:defins])
