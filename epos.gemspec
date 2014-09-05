@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'epos'
-  s.version     = '0.9.0'
+  s.version     = '0.9.1'
   s.date        = '2014-09-05'
   s.summary     = "Access to the Houaiss dictionary data files"
   s.description = "Provides access to the Houaiss dictionary data files.  Entries can be exported as HTML."
@@ -16,5 +16,8 @@ Gem::Specification.new do |s|
                   Dir["lib/**/*.css"] +
                   Dir["examples/**/*.rb"]
 
-  s.add_dependency 'slim', '>= 2.0.0'
+  s.required_ruby_version = '~> 2.0'
+
+  s.add_runtime_dependency 'slim', '~> 2.0', '>= 2.0.0'
+  s.add_runtime_dependency 'tilt', '< 2'
 end
