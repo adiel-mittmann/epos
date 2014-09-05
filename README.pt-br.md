@@ -29,7 +29,7 @@ O seguinet exemplo busca a definição da palavra *épico* e a salva num arquivo
 
 Deve gerar algo assim:
 
-![epico](épico.png)
+![épico](epico.png)
 
 Limitações
 ----------

@@ -30,7 +30,7 @@ The following example looks up the word *épico* and saves it to a file:
 
 This is what it should look like:
 
-![epico](épico.png)
+![épico](epico.png)
 
 Limitations
 -----------
