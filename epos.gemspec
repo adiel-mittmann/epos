@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/adiel-mittmann/epos'
   s.license     = 'GPL3'
 
-  s.files       = %w(LICENSE README.md README.pt-br.md épico.png epos.gemspec) +
+  s.files       = %w(LICENSE README.md README.pt-br.md epico.png epos.gemspec) +
                   Dir["lib/**/*.rb"] +
                   Dir["lib/**/*.slim"] +
                   Dir["lib/**/*.css"] +
