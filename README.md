@@ -19,6 +19,11 @@ Features
 * Characters are rendered correctly, even those in the etymology section or in
   the pronunciation of foreign words.
 
+Installation
+------------
+
+    gem install epos
+
 Example
 -------
 

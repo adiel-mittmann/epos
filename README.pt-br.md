@@ -18,6 +18,11 @@ Funcionalidades
 * Os caracteres aparecem corretamente, mesmo aqueles na parte de etimologia e na
   pronúncia de palavras estrangeiras.
 
+Instalação
+----------
+
+    gem install epos
+
 Exemplo
 -------
 
