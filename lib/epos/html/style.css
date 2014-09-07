@@ -46,9 +46,9 @@
 .epos span.value{
   color: #666666;
 }
-.epos span.value.transty{
+.epos span.transty{
   color: #aaaa55;
 }
-.epos span.value.note{
+.epos span.note{
   color: #aa5555;
 }
