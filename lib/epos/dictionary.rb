@@ -97,7 +97,7 @@ module Epos
     end
 
     def simplify(s)
-      s.tr("áéíóúâêôãõàüçÁÉÍÓÚÂÊÔÃÕÀÜÇ", "aeiouaeoaoaucaeiouaeoaoauc").gsub(/[ -\\(\\)]/, "")
+      s.tr("áéíóúâêôãõàüçÁÉÍÓÚÂÊÔÃÕÀÜÇ", "aeiouaeoaoaucaeiouaeoaoauc").downcase.gsub(/[ \-\\(\\)]/, "")
     end
 
   end
