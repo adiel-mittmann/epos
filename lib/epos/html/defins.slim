@@ -4,5 +4,5 @@
   table
     - data.each do |defin|
       tr
-        td.num valign='top' = defin[:num]
+        td.num valign='top' = defin[:num] != "0" ? defin[:num] : ""
         td == render(:defin_body, defin)
