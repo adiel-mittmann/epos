@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
                   Dir["lib/**/*.rb"] +
                   Dir["lib/**/*.slim"] +
                   Dir["lib/**/*.css"] +
-                  Dir["examples/**/*.rb"]
+                  Dir["examples/web.rb"]
 
   s.required_ruby_version = '~> 2.0'
 
