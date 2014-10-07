@@ -10,5 +10,5 @@
         - if data[name].is_a?(String) || data[name].is_a?(Array)
           - if label
             = ' '
-          span class=(name.to_s.gsub(/_/, '-'))
+          span class=(label ? "value" : name.to_s.gsub(/_/, '-'))
             == render_text(data[name].is_a?(String) ? data[name] : data[name][@string_index])
