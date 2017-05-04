@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'epos'
-  s.version     = '0.9.3'
+  s.version     = '0.9.4'
   s.date        = '2017-05-04'
   s.summary     = "Access to the Houaiss dictionary data files"
   s.description = "Provides access to the Houaiss dictionary data files.  Entries can be exported as HTML."
