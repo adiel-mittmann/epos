@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Adiel Mittmann"]
   s.email       = 'adiel@mittmann.net.br'
   s.homepage    = 'https://github.com/adiel-mittmann/epos'
-  s.license     = 'GPL3'
+  s.license     = 'GPL-3.0'
 
   s.files       = %w(LICENSE README.md README.pt-br.md epico.png epos.gemspec) +
                   Dir["lib/**/*.rb"] +
