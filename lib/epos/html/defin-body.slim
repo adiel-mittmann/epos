@@ -1,8 +1,8 @@
-- if data[:text]
-  p.defin
-    - if data[:see]
-      = "→ "
+p.defin
+  - if data[:see]
+    = "→ "
+  - if data[:text]
     == render_text(data[:text])
-  == render(:attrs, data)
-  - data[:examples].each do |example|
-    p.example == render_text(example)
+== render(:attrs, data)
+- data[:examples].each do |example|
+  p.example == render_text(example)
