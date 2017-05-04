@@ -3,6 +3,6 @@
   - data.each do |div|
     h3.idiom
       = '‣ '
-      == render_text(div[:idiom]).gsub(/@/, "<span class='no-bold'>#{OR}</span>")
+      == render_text(div[:idiom]).gsub(/[@#]/){|m| "<span class='no-bold'>#{IDIOM_AUX_MAP[m]}</span>"}
     == render(:attrs, div)
     == render(:defins, div[:defins])

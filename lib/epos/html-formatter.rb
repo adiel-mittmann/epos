@@ -104,7 +104,7 @@ module Epos
       :animals       => "vozes de animais",
     }
 
-    OR = "ou"
+    IDIOM_AUX_MAP = {"@" => "ou", "#" => ","}
 
   end
 end
