@@ -36,12 +36,12 @@ module Epos
       simple_word = simplify(word)
       used        = {}
 
-      if level >= 0
+      if level == 0
         html << look_up_and_format(word)
         used[word] = true
       end
 
-      if level >= 1
+      if level == 1
         (@fuzzy[simple_word] || []).each do |actual|
           if !used[actual]
             html << look_up_and_format(actual)
@@ -50,7 +50,7 @@ module Epos
         end
       end
 
-      if level >= 2
+      if level == 2
         @fuzzy.each do |simple, words|
           if simple.include?(simple_word)
             words.each do |actual|
@@ -59,6 +59,17 @@ module Epos
                 used[actual] = true
               end
             end
+          end
+        end
+      end
+
+      if level == 4
+        regexp = Regexp.new(word)
+        (@idf1.keys + @idf2.keys).each do |actual|
+          next if used[actual]
+          if actual =~ regexp
+            html << look_up_and_format(actual)
+            used[actual] = true
           end
         end
       end
