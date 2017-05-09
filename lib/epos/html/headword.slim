@@ -9,6 +9,6 @@ h1
   - vars = data[:variants].map{|var| render_text(var)}
   - if vars.size > 0
     == vars[0..-2].map{|alt| ", #{alt}"}.join
-    == " #{OR} "
+    == " ou "
     == vars.last
 == render(:attrs, data)
