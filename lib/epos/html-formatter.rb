@@ -105,6 +105,7 @@ module Epos
     }
 
     IDIOM_AUX_MAP = {"@" => "ou", "#" => ","}
+    OR = "ou"
 
   end
 end
